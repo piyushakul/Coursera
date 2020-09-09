@@ -1,0 +1,6 @@
+def answer_five():
+    counties_df = census_df[census_df['SUMLEV']==50]
+    a = counties_df.groupby('STNAME').count()['SUMLEV']
+    a1 = a.argmax()
+    return a1
+answer_five()
