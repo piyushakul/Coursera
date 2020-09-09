@@ -1,0 +1,5 @@
+def answer_one():
+    m = max(df['Gold'])
+    name = df[df['Gold']==m]
+    return name.index.tolist()[0]
+answer_one()
