@@ -1,0 +1,5 @@
+def answer_two():
+    m = max(df['Gold'] - df['Gold.1'])
+    name = df[df['Gold']-df['Gold.1']==m]
+    return name.index.tolist()[0]
+answer_two()
